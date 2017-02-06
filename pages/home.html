@@ -1,0 +1,38 @@
+<div class=" text-center">
+	<h1>Home Page</h1>
+{{message}}
+
+		<div class=" container" ng-controller="FormCtrl">
+			<!-- FORM -->
+			<form class="name="userForm" ng-submit="submitForm()">
+				<div class="form-group">
+					<label>Person ID</label>
+					<input type="number" name="personid" class="form-control" ng-model="person.personId">
+
+				</div>
+				<div class="form-group">
+					<label>First Name</label>
+					<input type="text" name="fname" class="form-control" ng-model="person.fname">
+
+				</div>
+				<div class="form-group">
+					<label>Last Name</label>
+					<input type="text" name="lname" class="form-control" ng-model="person.lname">
+
+				</div>
+				<div class="form-group">
+					<label>Age</label>
+					<input type="number" name="age" class="form-control" ng-model="person.age">
+
+				</div>
+				<div class="form-group">
+					<label>Address Id</label>
+					<input type="number" name="addressid" class="form-control" ng-model="person.readAddresId">
+
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+
+
+</div>

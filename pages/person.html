@@ -1,0 +1,27 @@
+<div class=" text-center">
+	<h1>person Page</h1>
+	{{message}}
+	<div class="container">
+        <div ng-controller="personController">
+
+            <table class="span 5 table table-hover table-striped table-bordered">
+                <thead>Person database</thead>
+                <th>Person ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age </th>
+                <th>Address </th>
+                <tbody ng-repeat="p in personlist">
+                    <tr>
+                        <td>{{p.personId}}</td>
+                        <td>{{p.fname}}</td>
+                        <td>{{p.lname}}</td>
+                        <td>{{p.age}}</td>
+                        <td>{{p.address}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

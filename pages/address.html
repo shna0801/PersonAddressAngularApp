@@ -1,0 +1,27 @@
+<div class=" text-center">
+	<h1>address Page</h1>
+	{{message}}
+	    <div class="container">
+        <div ng-controller="addressController">
+
+            <table class="span 5 table table-hover table-striped table-bordered">
+                <thead>Address database</thead>
+                <th>Address ID</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Street </th>
+                <th>zip Code </th>
+                <tbody ng-repeat="a in addresslist">
+                    <tr>
+                        <td>{{a.addressId}}</td>
+                        <td>{{a.city}}</td>
+                        <td>{{a.state}}</td>
+                        <td>{{a.street}}</td>
+                        <td>{{a.zipCode}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
